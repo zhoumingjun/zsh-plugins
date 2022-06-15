@@ -1,0 +1,12 @@
+adr new First Decision
+doc/adr/0001-first-decision.adoc
+adr new Second Decision
+doc/adr/0002-second-decision.adoc
+adr new Third Decision
+doc/adr/0003-third-decision.adoc
+adr generate toc -p foo/doc/adr/
+# Architecture Decision Records
+
+* [1. First Decision](foo/doc/adr/0001-first-decision.adoc)
+* [2. Second Decision](foo/doc/adr/0002-second-decision.adoc)
+* [3. Third Decision](foo/doc/adr/0003-third-decision.adoc)

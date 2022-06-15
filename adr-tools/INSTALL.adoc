@@ -1,0 +1,66 @@
+== Installation
+
+=== Homebrew (MacOS X)
+
+Mac OS X users can install with https://brew.sh[Homebrew]:
+
+....
+brew install adr-tools
+....
+
+=== ASDF-VM (Linux, MacOS X)
+
+ADR-Tools can be installed from the
+https://github.com/asdf-vm/asdf[ASDF-VM version manager].
+
+=== From a Release Package (Linux, MacOS X)
+
+You can install a released package:
+
+[arabic]
+. Download a zip or tar.gz package from the
+https://github.com/npryce/adr-tools/releases[releases page]
+. Unzip / untar the package
+. Add the `src/' subdirectory to your PATH
+
+=== From Git (Linux, MacOS X)
+
+You can install with Git, if you want to be on the bleeding edge:
+
+[arabic]
+. Clone this repository
+. Add the `+src/+` subdirectory to your PATH.
+
+=== Windows 10
+
+==== Git for Windows: git bash
+
+When using git bash within https://git-for-windows.github.io/[Git for
+Windows], the scripts can simply be put in `+usr\bin+` in the
+installation directory. That directory usually is
+`+C:\Program Files\Git\usr\bin+`.
+
+[arabic]
+. Download a zip package from the
+https://github.com/npryce/adr-tools/releases[releases page]
+. Unzip the package
+. Copy everything from `+src/+` into `+C:\Program Files\Git\usr\bin+`
+. Pottery expects to run in a standard POSIX environment, so you must
+also install `+more+` or set the `+PAGER+` environment variable to
+`+less+`.
+
+==== Linux subsystem
+
+The scripts work in the Bash on
+https://www.microsoft.com/store/p/ubuntu/9nblggh4msv6[Ubuntu on
+Windows], the Linux-subsystem that officially supports Linux command
+line tools. Make sure that you have
+https://msdn.microsoft.com/en-us/commandline/wsl/install_guide[installed]
+the Linux-subsystem, run `+bash+` on the command line and follow the
+instructions in the ``From a Release Package'' section above.
+
+=== Autocomplete
+
+In order to have autocomplete on the commands, add the
+`+autocomplete/adr+` script to your `+/etc/bash_autocomplete.d+` or the
+equivalent to your platform.

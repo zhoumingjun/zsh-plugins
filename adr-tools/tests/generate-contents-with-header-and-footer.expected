@@ -1,0 +1,26 @@
+adr new First Decision
+doc/adr/0001-first-decision.adoc
+adr new Second Decision
+doc/adr/0002-second-decision.adoc
+adr new Third Decision
+doc/adr/0003-third-decision.adoc
+cat > intro.adoc <<EOF
+An intro.
+
+Multiple paragraphs.
+EOF
+cat > outro.adoc <<EOF
+An outro.
+EOF
+adr generate toc -i intro.adoc -o outro.adoc
+# Architecture Decision Records
+
+An intro.
+
+Multiple paragraphs.
+
+* [1. First Decision](0001-first-decision.adoc)
+* [2. Second Decision](0002-second-decision.adoc)
+* [3. Third Decision](0003-third-decision.adoc)
+
+An outro.
