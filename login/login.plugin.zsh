@@ -23,7 +23,7 @@ interact
 
 EOD
 )
+fi
 
 }
 
-fi
