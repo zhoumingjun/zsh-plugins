@@ -1,9 +1,9 @@
 #!/usr/bin/env zsh
 
 function lg(){
-if [[ -e "$HOME/.secret/$1" ]] ; then
+if [[ -e "$HOME/.config/lg/$1" ]] ; then
 
-source "$HOME/.secret/$1"
+source "$HOME/.config/lg/$1"
 
 code=`oathtool --totp --base32 -d6 $OATH_SECRET`
 
