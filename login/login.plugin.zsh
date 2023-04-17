@@ -1,9 +1,9 @@
 #!/usr/bin/env zsh
 
 function lg(){
-if [[ -e "$HOME/.config/secrets/login_$1" ]] ; then
+if [[ -e "$HOME/.config/secrets/login_$1.gpg" ]] ; then
 
-source "$HOME/.config/secrets/login_$1"
+eval $(gpg -q --for-your-eyes-only --no-tty -d "$HOME/.config/secrets/login_$1.gpg")
 
 code=`oathtool --totp --base32 -d6 $OATH_SECRET`
 
